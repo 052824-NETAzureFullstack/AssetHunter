@@ -18,26 +18,28 @@
 
     <div class="container">
       <form action="/submit_form" method="post">
+
         <div class="row">
           <h4>Personal Information:</h4>
+
           <div class="input-group input-group-icon">
             <input type="text" placeholder="Full Name" required   >
             <div class="input-icon">
-              <i class="fa fa-user"></i>
+              <i></i>
             </div>
           </div>
 
           <div class="input-group input-group-icon">
             <input type="email" placeholder="Email Address" required>
             <div class="input-icon">
-              <i class="fa fa-envelope"></i>
+              <i></i>
             </div>
           </div>
 
           <div class="input-group input-group-icon">
-            <input type="zip" placeholder="Zip" required>
+            <input type="number" placeholder="Zipcode" required>
             <div class="input-icon">
-              <i class="fa fa-key"></i>
+              <i></i>
             </div>
           </div>
         </div>
@@ -45,7 +47,7 @@
           <div class="input-group input-group-icon">
             <input type="city" placeholder="City" required>
             <div class="input-icon">
-              <i class="fa fa-key"></i>
+              <i></i>
             </div>
           </div>
 
@@ -111,12 +113,14 @@
               <option value="VI">Virgin Islands</option>
               <option value="NA">Other</option>
            </select>
+           <div class="input-icon">
+            <i></i>
+          </div>
           </div>
 
          
 
         <div class="row">
-
           <div class="col-half">
             <h4>Credit Score:</h4>
             <div class="input-group">
@@ -124,6 +128,7 @@
                 <input type="number" id="creditScore" name="creditScore" min="300" max="850" oninput="validateScore(event)" required><br><br>
                 <div *ngIf="showError" class="error">Please enter a number between 300 and 850.</div>
               </div>
+             
             </div>
           </div>
 
@@ -158,8 +163,6 @@
 
           <div class="input-group input-group-icon">
             <input type="number" min="0" placeholder="Maximum Asset Price" required>
-            <div class="input-icon">
-            </div>
           </div>
 
         </div>
