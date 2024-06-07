@@ -9,13 +9,14 @@
   .col-third { width: 30%; display: inline-block; }
 </style>
 
-<main class="main">
-  <header class="brand-name">
-    <img class="brand-logo1" src="assets/garrett_gray_LLC_logo.jpg" alt="logo" aria-hidden="true">
+<a class="custom-underline" [routerLink]="['/']">
+  <header class="header">
+    <img class="brand-logo1" src="assets/assetHunterLogo.png" alt="second logo" aria-hidden="true">
     <h1>Asset Hunter</h1>
-    <img class="brand-logo2" src="assets/assetHunterLogo.png" alt="second logo" aria-hidden="true">
   </header>
+</a><br>
 
+<main class="main">
     <div class="container">
       <form action="/submit_form" method="post">
 
@@ -179,6 +180,14 @@
         </div>
       </form>
     </div>
+    <footer class="footer">
+      <img class="brand-logo2" src="assets/garrett_gray_LLC_logo.jpg" alt="logo" aria-hidden="true"><br><br><br><br><br><br>
+      <p>&copy; All rights reserved. Garrett Gray LLC&trade; 2025. </p>
+    </footer>
+
+    <section class="results">
+      <router-outlet></router-outlet>
+    </section>
 </main>
 
-<router-outlet />
+<router-outlet/>
