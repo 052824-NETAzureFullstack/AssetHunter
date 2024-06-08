@@ -13,7 +13,7 @@ body {
 }
 h4 {
   /*color: #f0a500;*/
-  color:green;
+  color:#f0a500;
 
 }
 input,
@@ -35,7 +35,7 @@ select {
 }
 input:focus {
   outline: 0;
-  border-color: #bd8200;
+  border-color: maroon;
 
 }
 input:focus + .input-icon i {
@@ -72,10 +72,9 @@ input:checked + label:before,
 select:focus,
 select:active {
   /*background-color: #f0a500;*/
-  background-color: green;
-
+  background-color: #041239;
   color: #fff;
-  border-color: #bd8200;
+  border-color: maroon;
 }
 input[type="checkbox"] {
   display: none;
@@ -223,80 +222,65 @@ select option {
   .header {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the start (left) */
-    border: 1px solid #ccc; /* Border to define the shape */
-    padding: 10px; /* Padding inside the header */
-    background: #f0f0f0; /* Background color */
+    position: relative;
+
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    background: #041239;
     box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5),
-                inset -2px -2px 5px rgba(0, 0, 0, 0.1),
+                inset    -2px -2px 5px rgba(0, 0, 0, 0.1),
                 2px 2px 5px rgba(0, 0, 0, 0.1),
                 -2px -2px 5px rgba(255, 255, 255, 0.5); /* Embossed effect */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px; 
   }
   
-  .brand-logo1 {
-    width: 70px;
+  .ah-logo {
+    width: 300px;
     height: auto;
-    margin-right: 20px;
+
+    margin-left: 325%;
+    margin-top: 10px;
+    transform: scale(1.2); 
+    transform-origin: center;  
+
   }
 
-  h1 {
-    margin: 0;
-    color:green
-  }
-
-  .custom-underline {
-    text-decoration: underline;
-    text-decoration-color: black; /* Change this to the desired underline color */
-  }
-/*
-
- h1 {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  header {
+  .hamburger {
     display: flex;
-    justify-content: flex-start;
-    height: 60px;
-    padding: var(--content-padding);
-    box-shadow: 0px 5px 25px var(--shadow-color);
-  }
-
-  .brand-logo1 {
-    width: 60px;
-    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90px;
+    height: 48px;
+    cursor: pointer;
+    margin-left: 25px;
   }
   
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .hamburger span {
+    display: block;
     width: 100%;
-    max-width: 1200px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    position: relative;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
   }
-*/  
+  
+  .hamburger:hover span {
+    background-color: #f0a500;
+  }
+
   .footer {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
   }
-
- 
-
-  .brand-logo2 {
-    width: 100px; /* Adjust width as needed */
+  
+  .gg-logo {
+    width: 100px; 
     height: auto;
   }
 
   .button-clicked {
     background-color: #f0a500; 
-    border-color: 2px solid #bd8200;
+    border-color: 2px solid maroon;
     color: white;
   }
 
@@ -309,6 +293,17 @@ select option {
   .error {
   color: red;
 }
+
+.privacy-policy-link {
+  color: #f0a500; 
+  text-decoration: none;
+}
+
+.privacy-policy-link:hover {
+  color: maroon;
+}
+
+
 
 @media only screen and (max-width: 540px) {
   .col-half {
