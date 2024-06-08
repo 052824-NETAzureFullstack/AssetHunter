@@ -18,4 +18,4 @@
 
 -The app will then also compute 3 proposed strategies for successfully acquiring the asset and subsequently turning it into profit!
 
-- As a user, I should be able to extrapolate all of the resulting information by downloading it as a .pdf file.
+- As a user, I should be able to finally retrieve all of the resulting information by downloading it as a .pdf file.
