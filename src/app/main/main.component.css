@@ -240,24 +240,16 @@ select option {
     /*#56234c*/
     display: block;
     margin: 0 auto;
-    background-color: #041239; 
-    color: white;
-    cursor: pointer;    
-
+    background-color: #041239;
+    cursor: pointer;
+    color: white;     
 }
 
 #submitButton:hover {
-    background-color: #56234c;
-}
+    color: black; 
+    /*background-color: #f0a500;*/
+    background-color: #f0a500;
 
-
-.privacy-policy-link {
-  color: #f0a500; 
-  text-decoration: none;
-}
-
-.privacy-policy-link:hover {
-  color: #56234c;
 }
 
 

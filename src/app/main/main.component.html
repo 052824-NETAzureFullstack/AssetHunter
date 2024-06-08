@@ -16,10 +16,10 @@
         <div class="row">
           <h4>Score type:</h4>
             <div class="input-group">
-              <input id="scoreType-fico" type="radio" name="scoreType" value="fico" checked="true">
+              <input id="scoreType-fico" type="radio" name="scoreType" value="FICO" checked="true">
               <label for="scoreType-fico">FICO</label>
-              <input id="scoreType-vantage" type="radio" name="scoreType" value="vantage">
-              <label for="scoreType-vantage">Vantage</label>
+              <input id="scoreType-vantage" type="radio" name="scoreType" value="VANTAGE">
+              <label for="scoreType-vantage">VANTAGE</label>
             </div>
         </div>
 
@@ -34,34 +34,47 @@
         <div class="row">
           <h4>Desired Asset Type:</h4>
           <div class="input-group">
-            <input id="assetType-auto" type="radio" name="assetType" value="auto" required>
+            <input id="assetType-auto" type="radio" name="assetType" value="AUTO" required>
             <label for="assetType-auto">
               <span>
-                Auto
+                AUTO
               </span>
             </label>
 
-            <input id="assetType-home" type="radio" name="assetType" value="home" checked="true" required>
+            <input id="assetType-home" type="radio" name="assetType" value="HOME" checked="true" required>
             <label for="assetType-home">
               <span>
-                Home
+                HOME
               </span>
             </label>
           </div>
         </div>
 
         <div class="row">
-          <h4>Annual Salary:</h4>
+          <h4>Monthly Income:</h4>
           <div class="input-group">
-            <input type="number" id="creditScore" name="creditScore" min="0" required>
-            <div *ngIf="showError" class="error">Please enter a number between 300 and 850.</div>             
+            <input type="number" id="income" name="income" min="0" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <h4>Monthly Expenses:</h4>
+          <div class="input-group">
+            <input type="number" id="expenses" name="expenses" min="0" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <h4>Monthly Savings/Investments:</h4>
+          <div class="input-group">
+            <input type="number" id="savings" name="savings" min="0">
           </div>
         </div>
 
         <div class="row">
           <h4></h4>
           <div class="input-group">
-            <input  id="submitButton" type="submit" value="Submit">
+            <input  id="submitButton" type="submit" value="SUBMIT">
           </div>
         </div>
       </form>
