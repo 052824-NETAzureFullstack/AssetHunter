@@ -17,9 +17,4 @@ export class MainComponent {
     let value = parseInt(input.value);
     this.showError = (value < 300 || value > 850) ? true : false;
   }
-
-  changeButtonColor(event: Event): void {
-    const button = event.target as HTMLInputElement;
-    button.classList.add('button-clicked');
-  }
 }
