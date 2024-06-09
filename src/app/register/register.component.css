@@ -12,7 +12,7 @@ body {
 }
 h4 {
   /*color: #f0a500;*/
-  color: #f0a500;
+  color: maroon;
 }
 
 input,
@@ -257,7 +257,11 @@ select option {
 }
 
 .privacy-policy-link:hover {
-  color: #56234c;
+  color: maroon;
+}
+
+#password {
+    background-color: darkgray;
 }
 
 

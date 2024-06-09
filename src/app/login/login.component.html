@@ -1,1 +1,51 @@
-<p>login works!</p>
+
+
+  <main class="main">
+      <div class="container">
+        <form action="/submit_form" method="post">
+  
+          <div class="row">
+            <h4>Welcome Back</h4>
+            <div class="input-group input-group-icon">
+                <input type="email" placeholder="Email" required>
+                <div class="input-icon">
+                    <i></i>
+                </div>
+            </div>
+        </div>
+  
+            <div class="input-group input-group-icon">
+                <input id=password type="password" placeholder="Password (INACTIVE)" readonly>
+                <a class="forgot-password"><p id="forgot-password">Forgot Password?</p></a>
+                <div class="input-icon">
+                    <i></i>
+                </div>
+            </div>
+
+          <div class="row">
+            <div class="input-group">
+              <input id="keep" type="checkbox">
+              <label for="keep">Keep me logged in</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group">
+                <input id="submitButton" type="submit" value="REGISTER">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group input-group-icon">
+              <p id="no-account">Don't have an account?<a class="register"><b> Register for one here.</b></a></p>
+              <div class="input-icon">
+                  <i></i>
+              </div>
+           </div>
+          </div>
+
+   
+        </form>
+      </div>
+  </main>
+  
