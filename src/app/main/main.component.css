@@ -12,7 +12,7 @@ body {
 }
 h4 {
   /*color: #f0a500;*/
-  color: #f0a500;
+  color: maroon;
 }
 
 input,
@@ -66,6 +66,9 @@ input[type="radio"] + label:last-of-type {
 input[type="radio"] + label i {
   padding-right: 0.4em;
 }
+
+
+
 input[type="radio"]:checked + label,
 input:checked + label:before,
 select:focus,
@@ -74,8 +77,11 @@ select:active {
   background-color: #56234c;*/ 
   background-color: #041239; 
   color: #fff;
-  border-color: #56234c;
+  border-color: #f0a500;
 }
+
+
+
 input[type="checkbox"] {
   display: none;
 }
@@ -242,14 +248,15 @@ select option {
     margin: 0 auto;
     background-color: #041239;
     cursor: pointer;
-    color: white;     
+    color: white;
+    border-color: #f0a500;
 }
 
 #submitButton:hover {
-    color: black; 
+    color: white; 
     /*background-color: #f0a500;*/
     background-color: #f0a500;
-
+    border-color: #041239;
 }
 
 
