@@ -2,9 +2,9 @@ import { Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-import { TermsComponent } from './terms/terms.component';
 import { ResultsComponent } from './results/results.component';
 import { StrategiesComponent } from './strategies/strategies.component';
+import { TermsComponent } from './terms/terms.component';
 
 export const routes: Routes = [
     {path: '', component: LoginComponent},
@@ -13,7 +13,6 @@ export const routes: Routes = [
     {path: 'results', component: ResultsComponent},
     {path: 'strategies', component: StrategiesComponent}
     //{path: 'terms', component: TermsComponent},
-
 
     //{path: '**', redirectTo: 'not-found', pathMatch: 'full' }
     //{path: 'one', component: RouteOneComponent, canActivate: [routeLockGuard]},

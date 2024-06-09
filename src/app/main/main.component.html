@@ -26,7 +26,7 @@
         <div class="row">
           <h4>Credit Score:</h4>
           <div class="input-group">
-            <input type="number" id="creditScore" name="creditScore" min="300" max="850" oninput="validateScore(event)" required>
+            <input type="number" id="creditScore" name="creditScore" min="300" max="850" oninput="validateScore(event)">
             <div *ngIf="showError" class="error">Please enter a number between 300 and 850.</div>             
           </div>
         </div>
@@ -34,14 +34,14 @@
         <div class="row">
           <h4>Desired Asset Type:</h4>
           <div class="input-group">
-            <input id="assetType-auto" type="radio" name="assetType" value="AUTO" required>
+            <input id="assetType-auto" type="radio" name="assetType" value="AUTO">
             <label for="assetType-auto">
               <span>
                 AUTO
               </span>
             </label>
 
-            <input id="assetType-home" type="radio" name="assetType" value="HOME" checked="true" required>
+            <input id="assetType-home" type="radio" name="assetType" value="HOME" checked="true">
             <label for="assetType-home">
               <span>
                 HOME
@@ -53,14 +53,14 @@
         <div class="row">
           <h4>Monthly Income:</h4>
           <div class="input-group">
-            <input type="number" id="income" name="income" min="0" required>
+            <input type="number" id="income" name="income" min="0">
           </div>
         </div>
 
         <div class="row">
           <h4>Monthly Expenses:</h4>
           <div class="input-group">
-            <input type="number" id="expenses" name="expenses" min="0" required>
+            <input type="number" id="expenses" name="expenses" min="0">
           </div>
         </div>
 
