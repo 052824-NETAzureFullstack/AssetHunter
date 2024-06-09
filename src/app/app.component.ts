@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet,RouterModule } from '@angular/router';
+import { RouterOutlet,RouterModule,Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 
@@ -22,10 +22,6 @@ import { CommonModule } from '@angular/common';
 
     <main>
       <section class="metrics">
-        <router-outlet></router-outlet>
-      </section>
-
-      <section class="terms">
         <router-outlet></router-outlet>
       </section>
 

@@ -74,7 +74,7 @@ select:active {
   background-color: #56234c;*/ 
   background-color: #041239; 
   color: #fff;
-  border-color: #56234c;
+  border-color: #f0a500;
 }
 input[type="checkbox"] {
   display: none;
@@ -244,11 +244,12 @@ select option {
     background-color: #041239; 
     color: white;
     cursor: pointer;    
-
+    border-color: #f0a500;
 }
 
 #submitButton:hover {
     background-color: #56234c;
+    border-color: #f0a500;
 }
 
 
