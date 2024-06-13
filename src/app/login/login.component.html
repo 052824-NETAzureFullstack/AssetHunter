@@ -1,14 +1,7 @@
 
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-</head>
-
-  <main class="main">
+ <main class="main">
       <div class="container">
-        <!--<form action="/submit_form" method="post"> -->
-          <form ngNoForm  [action]="url" method="POST"
-
-  
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
           <div class="row">
             <h4>Welcome Back</h4>
             <div class="input-group input-group-icon">
