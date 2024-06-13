@@ -20,6 +20,7 @@ input[type="radio"] + label,
 input[type="checkbox"] + label:before,
 select option,
 select {
+  color: black;
   width: 100%;
   padding: 1em;
   line-height: 1.4;
@@ -71,9 +72,10 @@ input:checked + label:before,
 select:focus,
 select:active {
   /*background-color: #f0a500;
-  background-color: #56234c;*/ 
+  background-color: #56234c;
   background-color: #041239; 
-  color: #fff;
+  */ 
+  color: black;
   border-color: #f0a500;
 }
 input[type="checkbox"] {
