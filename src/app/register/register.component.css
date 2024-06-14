@@ -67,6 +67,7 @@ input[type="radio"] + label:last-of-type {
 input[type="radio"] + label i {
   padding-right: 0.4em;
 }
+
 input[type="radio"]:checked + label,
 input:checked + label:before,
 select:focus,
@@ -78,6 +79,8 @@ select:active {
   color: black;
   border-color: #f0a500;
 }
+
+
 input[type="checkbox"] {
   display: none;
 }
@@ -101,13 +104,14 @@ input[type="checkbox"] + label:after {
   top: 0.45em;
   left: 0.2em;
   font-size: 0.8em;
-  color: #fff;
+  color: white;
   opacity: 0;
   font-family: FontAwesome;
   content: "\f00c";
 }
 input:checked + label:after {
   opacity: 1;
+  background-color: #041239;
 }
 select {
   height: 3.4em;
@@ -269,6 +273,9 @@ select option {
     background-color: darkgray;
 }
 
+.terms:active {
+  background-color: #041239; 
+}
 
 @media only screen and (max-width: 540px) {
   .col-half {

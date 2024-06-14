@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet,RouterModule,Routes } from '@angular/router';
+import { RouterOutlet,RouterModule, Routes} from '@angular/router';
 
 @Component({
   selector: 'app-strategies',
@@ -8,6 +8,7 @@ import { RouterOutlet,RouterModule,Routes } from '@angular/router';
   templateUrl: './strategies.component.html',
   styleUrl: './strategies.component.css'
 })
+
 export class StrategiesComponent {
 
 }

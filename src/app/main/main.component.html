@@ -9,15 +9,12 @@
     .col-half { width: 48%; display: inline-block; }
     .col-third { width: 30%; display: inline-block; }
   </style>
-  <!-- 
-    Importing FA Icons
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  -->
 </head>
+
 
 <main class="main">
     <div class="container">
-      <form action="/submit_form" method="post">
+      <form #f="ngForm" novalidate>
         <div class="row">
           <h4>Score type:</h4>
             <div class="input-group">

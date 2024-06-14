@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './results.component.html',
   styleUrl: './results.component.css'
 })
+
 export class ResultsComponent {
 
 }
