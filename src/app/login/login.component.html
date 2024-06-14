@@ -1,19 +1,19 @@
 
- <main class="main">
-      <div class="container">
-        <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+<main class="main">
+    <div class="container">
+      <form>
           <div class="row">
             <h4>Welcome Back</h4>
             <div class="input-group input-group-icon">
-                <input type="email" placeholder="Email Address">
+              <input name=email type="email" placeholder="Email Address" [(ngModel)]="email" >
                 <div class="input-icon">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
             </div>
-        </div>
+          </div>
 
         <div class="input-group input-group-icon">
-          <input id=password type="password" placeholder="Password (INACTIVE)" readonly>
+          <input name=password id=password type="password" placeholder="Password (INACTIVE)" [(ngModel)]="password" readonly>
           <a class="forgot-password"><p id="forgot-password" >Forgot Password?</p></a>
           <div class="input-icon">
             <i class="fa fa-key" aria-hidden="true"></i>
@@ -22,7 +22,7 @@
         
           <div class="row">
             <div class="input-group">
-              <input id="keep" type="checkbox">
+              <input id="keep" type="checkbox" [(ngModel)]="password">
               <label for="keep">Keep me logged in</label>
             </div>
           </div>
@@ -32,18 +32,16 @@
                 <input id="submitButton" type="submit" value="LOGIN" routerLink="main">
             </div>
         </div>
+    </form>
 
         <div class="row">
-            <div class="input-group input-group-icon">
+          <div class="input-group input-group-icon">
               <p id="no-account">Don't have an account?<a class="register"><b routerLink="register"> Register for one here.</b></a></p>
-              <div class="input-icon">
-                  <i></i>
-              </div>
-           </div>
+            <div class="input-icon">
+              <i></i>
+            </div>
           </div>
-
-   
-        </form>
-      </div>
-  </main>
+        </div>
+  </div>
+</main>
   

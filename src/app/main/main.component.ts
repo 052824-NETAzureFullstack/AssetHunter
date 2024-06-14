@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet,RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule }   from '@angular/forms';
+//ximport { LoginComponent } from './login/login.component';
 
 @Component({
   selector: 'app-main',
