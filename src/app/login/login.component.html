@@ -1,11 +1,11 @@
 
 <main class="main">
     <div class="container">
-      <form>
-          <div class="row">
+      <form [formGroup]="loginForm" (submit)="login()">
+                <div class="row">
             <h4>Welcome Back</h4>
             <div class="input-group input-group-icon">
-              <input name=email type="email" placeholder="Email Address" [(ngModel)]="email" >
+              <input name=email type="email" placeholder="Email Address" formControlName="email" >
                 <div class="input-icon">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
@@ -13,7 +13,7 @@
           </div>
 
         <div class="input-group input-group-icon">
-          <input name=password id=password type="password" placeholder="Password (INACTIVE)" [(ngModel)]="password" readonly>
+          <input id=password type="password" placeholder="Password (INACTIVE)"formControlName="password" readonly>
           <a class="forgot-password"><p id="forgot-password" >Forgot Password?</p></a>
           <div class="input-icon">
             <i class="fa fa-key" aria-hidden="true"></i>
@@ -22,7 +22,7 @@
         
           <div class="row">
             <div class="input-group">
-              <input id="keep" type="checkbox" [(ngModel)]="password">
+              <input id="keep" type="checkbox" formControlName="password">
               <label for="keep">Keep me logged in</label>
             </div>
           </div>
