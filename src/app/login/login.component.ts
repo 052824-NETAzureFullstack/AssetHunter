@@ -13,5 +13,5 @@ import { FormsModule } from '@angular/forms';
 export class LoginComponent {
   email = "";
   password = "";
-  StayLoggedIn = "";
+  stayLoggedIn = "";
 }

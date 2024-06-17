@@ -23,6 +23,7 @@ import { CommonModule } from '@angular/common';
     <main>
       <section class="metrics">
         <router-outlet></router-outlet>
+        <!-- only need one router outlet, have the outlet point to a component and have it wrap that decides how they are displayed... something that has a side-by-side strucure -->
       </section>
 
       <footer class="footer">
