@@ -26,6 +26,7 @@
   transform: scale(1.4);
 }
 
+/*≈
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -47,7 +48,7 @@
 .hamburger:hover span {
   background-color: #f0a500;
 }
-
+*/
 .footer {
   display: flex;
   justify-content: center; /* Centers horizontally */
@@ -58,3 +59,70 @@
   width: 100px; 
   height: auto;
 }
+
+/* Styling Nav Bar */ 
+nav {
+  padding: 1.5rem 2rem;
+  background-color: #041239;
+  color: #fff;
+ }
+
+ /* Styling Hamburger Icon */ 
+ .checkbtn {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+ }
+
+ /* Styling checkbox Icon */ 
+ #check {
+  display: none;
+ }
+ 
+ /* Initially hide menu */ 
+ .nav-mobile {
+  display: none;
+ }
+
+ /* Toggle the menu using checkbox */ 
+ #check:checked ~ .nav-mobile {
+  display: block;
+ }
+
+
+ /* Styling menu items */ 
+ .nav-mobile {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  background: #041239;
+  z-index: 1;
+  width: 200px;
+ }
+ .nav-mobile a {
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: block;
+ }
+
+  /* Make menu bar responsive so that it looks good on all devices */ 
+ @media only screen and (max-width: 992px) {
+  .checkbtn {
+  display: block;
+  font-size: 5rem;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  }
+ .nav-mobile {
+  top: 160px;
+  width: 100%;
+  }
+ .nav-mobile a {
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  }
+ }
+
+ 
+ 
