@@ -1,0 +1,86 @@
+
+<head>
+    <style>
+      .container { max-width: 600px; margin: 0 auto; }
+      .row { margin-bottom: 15px; }
+      .input-group { margin-bottom: 15px; }
+      .input-group-icon { position: relative; }
+      .input-icon { position: absolute; left: 10px; top: 10px; }
+      .col-half { width: 48%; display: inline-block; }
+      .col-third { width: 30%; display: inline-block; }
+    </style>
+  </head>
+  
+  
+  <main class="main">
+      <div class="container">
+        <form #f="ngForm" novalidate>
+          <div class="row">
+            <h4>Score type:</h4>
+              <div class="input-group">
+                <input id="scoreType-fico" type="radio" name="scoreType" value="FICO" checked="true">
+                <label for="scoreType-fico">FICO</label>
+                <input id="scoreType-vantage" type="radio" name="scoreType" value="VANTAGE">
+                <label for="scoreType-vantage">VANTAGE</label>
+              </div>
+          </div>
+  
+          <div class="row">
+            <h4>Credit Score:</h4>
+            <div class="input-group">
+              <input type="number" id="creditScore" name="creditScore" min="300" max="850" oninput="validateScore(event)">
+              <div *ngIf="showError" class="error">Please enter a number between 300 and 850.</div>             
+            </div>
+          </div>
+  
+          <div class="row">
+            <h4>Desired Asset Type:</h4>
+            <div class="input-group">
+              <input id="assetType-auto" type="radio" name="assetType" value="AUTO">
+              <label for="assetType-auto">
+                <span>
+                  AUTO
+                </span>
+              </label>
+  
+              <input id="assetType-home" type="radio" name="assetType" value="HOME" checked="true">
+              <label for="assetType-home">
+                <span>
+                  HOME
+                </span>
+              </label>
+            </div>
+          </div>
+  
+          <div class="row">
+            <h4>Monthly Income:</h4>
+            <div class="input-group">
+              <input type="number" id="income" name="income" min="0">
+            </div>
+          </div>
+  
+          <div class="row">
+            <h4>Monthly Expenses:</h4>
+            <div class="input-group">
+              <input type="number" id="expenses" name="expenses" min="0">
+            </div>
+          </div>
+  
+          <div class="row">
+            <h4>Monthly Savings/Investments:</h4>
+            <div class="input-group">
+              <input type="number" id="savings" name="savings" min="0">
+            </div>
+          </div>
+  
+          <div class="row">
+            <h4></h4>
+            <div class="input-group">
+              <input id="submitButton" type="submit" value="COMPUTE" routerLink="results">
+            </div>
+          </div>
+          
+        </form>
+      </div>
+  </main>
+  

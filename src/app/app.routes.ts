@@ -7,9 +7,9 @@ import { StrategiesComponent } from './strategies/strategies.component';
 import { TermsComponent } from './terms/terms.component';
 
 export const routes: Routes = [
-    {path: '', component: LoginComponent},
+    {path: '', component: MainComponent},
     {path: 'register', component: RegisterComponent},
-    {path: 'main', component: MainComponent},
+    {path: 'login', component: LoginComponent},
     {path: 'results', component: ResultsComponent},
     {path: 'strategies', component: StrategiesComponent}
     //{path: 'terms', component: TermsComponent},
