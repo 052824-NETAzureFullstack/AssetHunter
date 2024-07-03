@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet,RouterModule } from '@angular/router';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -23,7 +22,7 @@ import { RouterOutlet,RouterModule } from '@angular/router';
 
   <main>
     <section>
-      <router-outlet></router-outlet>
+      <router-outlet>  </router-outlet>
     </section>
   </main>
   

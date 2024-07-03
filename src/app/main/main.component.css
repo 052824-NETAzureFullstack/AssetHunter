@@ -1,0 +1,108 @@
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+.login-button {
+  background-color: #041239; /* Use the theme color */
+  color: #f0a500; /* Use the theme text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px; /* Makes the button oval */
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+              -2px -2px 5px rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+  background-color: maroon; /* Change to highlight color on hover */
+  transform: scale(1.05);
+  color: black;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  background: #f5f8fd;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+#hero .icon-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon-box {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon-box .icon {
+  margin: 0 auto 15px auto;
+  width: 64px;
+  height: 64px;
+  background: #f5f8fd;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-box .icon i {
+  font-size: 32px;
+  color: maroon;
+  transition: color 0.3s ease-in-out;
+}
+
+.icon-box h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.icon-box h4 a {
+  color: black;
+}
+
+.icon-box p {
+  font-size: 14px;
+  color: maroon;
+  margin-bottom: 0;
+}
+
+.icon-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;    
+}
+
+.icon-box:hover .icon i {
+  color: #f0a500;
+}
+
+.icon-box:hover h4 a {
+  color: black;
+}
+
+.icon-box:hover p {
+  color: #f0a500;
+}
